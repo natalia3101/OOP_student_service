@@ -1,5 +1,7 @@
 package StudentDomen;
 
+// еще один участник образовательного процесса, пока с ним никак не взаимодействуем.
+// имеет имя, фамилию, возраст, id, степень
 public class Teacher extends User {
         
     private int teacherId;

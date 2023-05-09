@@ -3,6 +3,7 @@ package StudentDomen;
 import java.util.Iterator;
 import java.util.List;
 
+// создаем поток, состоящий из групп
 public class StudentStream implements Iterable<StudentGroup>{
 
     // список групп студентов, из которых состоит поток

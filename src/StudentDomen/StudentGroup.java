@@ -3,7 +3,7 @@ package StudentDomen;
 import java.util.Iterator;
 import java.util.List;
 
-
+// создаем группу студентов. наследуются признаки студента, есть возможность сравнения групп между собой
 public class StudentGroup implements Iterable<Student>, Comparable<StudentGroup>{
     private List<Student> students;
 

@@ -30,7 +30,7 @@ public class App {
         Student s17 = new Student("John", "U", 50, 11);
         Student s18 = new Student("Kate", "L", 42, 22);
 
-        
+        // разбиваем студентов на группы
         List<Student> listStudents1 = new ArrayList<Student>();
         listStudents1.add(s1);
         listStudents1.add(s2);
@@ -62,7 +62,7 @@ public class App {
         StudentGroup group4 = new StudentGroup(listStudents4);
 
 
-
+        // Это сортировка внутри группы
         // StudentGroup group1 = new StudentGroup(listStudents1);
 
         // for(Student stud : group1)
@@ -79,6 +79,8 @@ public class App {
         //     System.out.println(stud);
         // }
 
+
+        // создаем поток, состоящий из нескольких групп. Наверняка этот процесс разбиения и объединения можно оптимизировать, но пока так
         List<StudentGroup> allGroups = new ArrayList<StudentGroup>();
         allGroups.add(group1);
         allGroups.add(group2);

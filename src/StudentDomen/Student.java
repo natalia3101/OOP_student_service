@@ -1,5 +1,6 @@
 package StudentDomen;
 
+// создаем одного из участника университета - студента. она/он имеет имя, фамилию, возраст и id
 public class Student extends User implements Comparable<Student> {
     private long studentID;
 
@@ -7,7 +8,6 @@ public class Student extends User implements Comparable<Student> {
         super(firstName, lastName, age);
         this.studentID = studentID;
     }
-
 
     public long getStudentID() {
         return studentID;
@@ -17,6 +17,7 @@ public class Student extends User implements Comparable<Student> {
         this.studentID = studentID;
     }
 
+    // вывод студента
     @Override
     public String toString() {
         return "Student {" 
@@ -28,7 +29,8 @@ public class Student extends User implements Comparable<Student> {
                 '}';
     }
 
-
+    // метод для сравнения студентов по разным параметрам
+    // в данном случае сначала они сравниваются по возрасту, потом по id
     @Override
     public int compareTo(Student o) {
         

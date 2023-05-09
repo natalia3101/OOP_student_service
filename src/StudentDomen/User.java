@@ -1,5 +1,7 @@
 package StudentDomen;
 
+// любой участник образовательного процесса, сюда входят любые люди из универа - студенты, преподаватели, сотрудники
+// я кстати не поняла, почему юзер не анонимный
 public class User {
     private String firstName;
     private String lastName;
