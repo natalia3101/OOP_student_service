@@ -2,9 +2,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import javax.swing.event.SwingPropertyChangeSupport;
+
+import Controllers.EmployeeController;
+import Services.AverageAge;
+import Services.TeacherService;
+import StudentDomen.Employee;
 import StudentDomen.Student;
 import StudentDomen.StudentGroup;
 import StudentDomen.StudentStream;
+import StudentDomen.Teacher;
 import StudentDomen.User;
 
 public class App {
@@ -108,9 +115,23 @@ public class App {
             for(Student stud : group)
                 System.out.println(stud);
         }
-        
-    }
 
+            // Employee emp1 = new Employee("Nat", "F", 27, 0);
+    // EmployeeController.paySalary(emp1);
+
+    Integer studHours[] = {124, 65, 142, 2};
+    System.out.println(EmployeeController.mean(studHours));
+
+    Double empSalary[] = {12665.65, 4456645.0, 34423423.2, 2344.55};
+    System.out.println(EmployeeController.mean(empSalary));
+
+        
+
+    AverageAge<Teacher> avAgeTeachers = new AverageAge<Teacher>();
+    System.out.println(avAgeTeachers.avAge(TeacherService.getAll()));
+
+
+    }  
     
 }
 
